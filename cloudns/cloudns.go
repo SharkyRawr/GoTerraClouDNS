@@ -2,6 +2,7 @@ package cloudns
 
 import (
 	"encoding/json"
+	"errors"
 	"net/http"
 	"net/url"
 )
@@ -78,6 +79,12 @@ func (c *ClouDNSAPI) Login() (StatusResponse, error) {
 	values := url.Values{}
 	status := StatusResponse{}
 	err := c.doRequest(EPLogin, values, &status)
+	if err != nil {
+		return status, err
+	}
+	if status.Status != "Success" {
+		return status, errors.New("Login failed: " + status.StatusDescription)
+	}
 	return status, err
 }
 
