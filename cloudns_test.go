@@ -5,6 +5,10 @@ import (
 	"testing"
 )
 
+/*
+	Probably should move it to the correct directory.
+*/
+
 func setup() cloudns.ClouDNSAPI {
 	api := cloudns.New("16535", "Sculptor-Jumble8-Chastise")
 	return api
