@@ -4,11 +4,12 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"git.catgirl.biz/sophie/goterracloudns/v2/cloudns"
 	"os"
 	"strconv"
 	"strings"
 	"text/template"
+
+	"github.com/SharkyRawr/GoTerraClouDNS/cloudns"
 )
 
 var authID = flag.Int("sub-auth-id", 0, "Sub Auth ID")

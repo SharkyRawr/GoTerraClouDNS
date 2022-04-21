@@ -1,8 +1,9 @@
 package main
 
 import (
-	"git.catgirl.biz/sophie/goterracloudns/v2/cloudns"
 	"testing"
+
+	"github.com/SharkyRawr/GoTerraClouDNS/cloudns"
 )
 
 /*

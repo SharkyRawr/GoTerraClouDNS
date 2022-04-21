@@ -1,3 +1,3 @@
-module git.catgirl.biz/sophie/goterracloudns/v2
+module github.com/SharkyRawr/GoTerraClouDNS
 
 go 1.18
